@@ -1,0 +1,59 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calc-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.screen {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: right;
+}
+
+.buttons {
+    display: flex;
+}
+
+.digits, .other {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.key {
+    flex: 1 0 20%;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.digit {
+    background-color: #f0f0f0;
+}
+
+.operation {
+    background-color: #e0e0e0;
+}
+
+.bracket {
+    background-color: #d0d0d0;
+}
+
+.result {
+    background-color: #90ee90;
+}
+
+.clear {
+    background-color: #ff6961;
+}

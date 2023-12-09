@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats facts</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>    
+</head>
+<body>
+    <header class="header-style">
+        <div class="container">
+            <nav class="main">
+                <ul>
+                    <li id="active"><a>Главная</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="search-form">
+            <input type="text" class="search-field">
+            <button class="search-btn" onclick="onSearchButtonClick">Найти</button>
+            <div class="lines" id="hidden">
+            </div>
+        </div>
+        <aside>
+            <nav>
+                <form>
+                    <label for="Per-page">Количество страниц</label>
+                    <select name="Per-page" id="Per-page">
+                        <option value="5">5</option>
+                        <option value="10" selected>10</option>
+                        <option value="15">15</option>
+                        <option value="20">20</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select>
+                </form>
+            </nav>
+        </aside>
+        <div class="posts"></div>
+        <div class="pagination">
+            <button onclick="getBackPage()" class="nav-btn">Назад</button>
+            <div id="btn-p" class="btnpage"></div>
+            <button onclick="getNextPage()" class="nav-btn">Вперед</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>Awesome.org &reg;</p>
+        </div>
+    </footer>
+    <template id="post_t">
+        <div class="Post">
+            <p></p>
+            <div class="userCard">
+                
+            </div>
+        </div>
+    </template>
+</body>
+</html>

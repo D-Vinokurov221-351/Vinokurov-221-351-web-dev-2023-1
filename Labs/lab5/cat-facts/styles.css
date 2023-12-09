@@ -1,0 +1,175 @@
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #560bad, #3c1361);
+    color: #ffffff;
+}
+
+main {
+    margin: 77px 12.5% 0 12.5%;
+}
+
+header {
+    flex: 0 0 auto;
+    display: block;
+    background: linear-gradient(to right, #560bad, #3c1361);
+    text-align: center;
+}
+
+header nav {
+    width: 100%;
+    background-color: blueviolet;
+    height: 60px;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    padding: 0 12.5%;
+}
+
+header ul {
+    margin: 8px 0 0;
+    list-style: none;
+    display: flex;
+    column-gap: 10px;
+}
+
+.header-style li {
+    padding: 20px 5px;
+}
+
+.header-style li:last-child {
+    margin-right: 0px;
+}
+
+.container {
+    margin: 0% auto;
+    max-width: 75%;
+}
+
+.footer {
+    flex: 0 0 auto;
+    background-color: blueviolet;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.Post:last-child {
+    margin-bottom: 15px;
+}
+
+.Post {
+    margin-top: 15px;
+    border: 2px solid rgb(255, 127, 0);
+    border-radius: 15px;
+    background-color: rgba(148, 0, 211);
+}
+
+.Post p {
+    padding: 5px;
+}
+
+.userCard {
+    padding: 5px;
+    border-radius: 15px;
+    background-color:saddlebrown;
+    color: white;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+#activePage {
+    background-color: white;
+    color: rgb(255, 127, 0);
+}
+
+#activePage:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.pageButton {
+    width: 40px;
+    margin-right: 5px;
+}
+
+.pagination button {
+    border-radius: 10px;
+    height: 40px;
+    background-color: gray;
+    color: white;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 127, 0);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.pagination button:hover {
+    background-color: rgba(100, 100, 100, 0.275);
+}
+
+.pageButton:last-child {
+    margin-right: 0;
+}
+
+.search-form {
+    display: flex;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.search-form input {
+    height: 40px;
+    flex: 1;
+    font-size: 20px;
+    box-sizing: border-box;
+    border: 2px solid rgb(255, 127, 0);
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+.search-form button {
+    height: 40px;
+    background-color: gray;
+    color: white;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 127, 0);;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.search-form button:hover {
+    background-color: rgba(100, 100, 100, 0.275);
+}
+
+.lines {
+    top: 35px;
+    margin-right: 85px;
+    width: calc(100% - 85px);
+    position: absolute;
+    box-sizing: border-box;
+    border: 2px rgb(255, 127, 0);
+    z-index: 5;
+    background-color: white;
+    color: red;
+}
+
+.lines p {
+    font-size: 20px;
+    padding: 5px;
+    margin: 0;
+}
+
+.lines p:hover {
+    background-color: white;
+    color: blue;
+    cursor: pointer;
+}
