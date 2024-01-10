@@ -1,0 +1,17 @@
+header, th, footer {
+    background-color: #C71585 !important; 
+}
+
+header a{
+    color: blueviolet;
+}
+
+#HiddenB input {
+    width: 100px;
+    float: left;
+}
+
+select {
+    width: 200px;
+    float: left;
+}
